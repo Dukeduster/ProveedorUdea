@@ -78,7 +78,7 @@ public class ManufacturerFacadeREST extends AbstractFacade<Manufacturer> {
 
     @GET
     @Path("count")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String countREST() {
         return String.valueOf(super.count());
     }
